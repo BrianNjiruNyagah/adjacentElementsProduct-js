@@ -1,0 +1,15 @@
+function adjacentElementsProduct(inputArray) {
+    
+    var x=-1001;
+    var multiple;
+    
+    //multiplying of adjacent elements
+    for(var i = 0;i<inputArray.length-1;i++){
+         multiple = inputArray[i]*inputArray[i+1];
+         //obtaining the largest adjacent element product
+         if(x<multiple){
+             x=multiple;
+         }
+    }
+    return x;
+}
